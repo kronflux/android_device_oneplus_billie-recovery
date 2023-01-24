@@ -75,72 +75,26 @@
         <fqname>@1.1::INetd/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.system.wifi.keystore</name>
+        <name>vendor.oplus.hardware.commondcs</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>IKeystore</name>
-            <instance>default</instance>
+            <name>ICommonDcsHalService</name>
+            <instance>commondcsservice</instance>
         </interface>
-        <fqname>@1.0::IKeystore/default</fqname>
-    </hal>
-    <hal format="native">
-        <name>netutils-wrapper</name>
-        <version>1.0</version>
+        <fqname>@1.0::ICommonDcsHalService/commondcsservice</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.pixelworks.hardware.display</name>
-        <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>IIris</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.1::IIris/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.pixelworks.hardware.feature</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IIrisFeature</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IIrisFeature/default</fqname>
-    </hal>
-	<hal format="hidl">
         <name>vendor.qti.hardware.qccsyshal</name>
         <transport>hwbinder</transport>
-        <version>1.1</version>
+        <version>1.0</version>
         <interface>
             <name>IQccsyshal</name>
             <instance>qccsyshal</instance>
         </interface>
-        <fqname>@1.1::IQccsyshal/qccsyshal</fqname>
+        <fqname>@1.0::IQccsyshal/qccsyshal</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.qti.hardware.radio.atcmdfwd</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IAtCmdFwd</name>
-            <instance>AtCmdFwdService</instance>
-        </interface>
-        <fqname>@1.0::IAtCmdFwd/AtCmdFwdService</fqname>
-    </hal>
-	<hal format="hidl">
-        <name>vendor.qti.hardware.sigma_miracast</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>Isigma_miracast</name>
-            <instance>sigmahal</instance>
-            <instance>sigmahal64</instance>
-        </interface>
-        <fqname>@1.0::Isigma_miracast/sigmahal</fqname>
-        <fqname>@1.0::Isigma_miracast/sigmahal64</fqname>
-    </hal>
-	<hal format="hidl">
         <name>vendor.qti.hardware.systemhelper</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -155,20 +109,10 @@
         <fqname>@1.0::ISystemEvent/default</fqname>
         <fqname>@1.0::ISystemResource/default</fqname>
     </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.wifi.keystore</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IKeystoreExt</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IKeystoreExt/default</fqname>
-    </hal>
     <system-sdk>
+        <version>27</version>
         <version>28</version>
         <version>29</version>
         <version>30</version>
-		<version>31</version>
     </system-sdk>
 </manifest>
